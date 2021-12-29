@@ -13,9 +13,9 @@ This project made with kodular. To try it for youself, import "laundry2.aia" to 
 Screenshots
 -----------
 <p float="left">
- <img src="1.jpeg" width="230">
- <img src="2.jpeg" width="230">
- <img src="3.jpeg" width="230">
+ <img src="ss/1.jpeg" width="230">
+ <img src="ss/2.jpeg" width="230">
+ <img src="ss/3.jpeg" width="230">
  </p>
 
 
