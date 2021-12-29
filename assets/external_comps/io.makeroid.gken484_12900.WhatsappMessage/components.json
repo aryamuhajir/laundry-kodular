@@ -1,0 +1,42 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2019-04-16T09:36:06+0200",
+ "nonVisible": "true",
+ "iconName": "https://res.cloudinary.com/new-shalom/image/upload/v1555383886/whatsapp.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "SendIndividualMessage",
+   "description": "Method for SendIndividualMessage",
+   "params": [
+    {
+     "name": "number",
+     "type": "text"
+    },
+    {
+     "name": "message",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SendMessageToAll",
+   "description": "Method for SendMessageToAll",
+   "params": [{
+    "name": "message",
+    "type": "text"
+   }]
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "io.makeroid.gken484_12900.WhatsappMessage.WhatsappMessage",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "WhatsappMessage",
+ "helpString": "Extension to send whatsapp message to particular Number",
+ "properties": [],
+ "events": []
+}]

@@ -1,0 +1,928 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id=".cr7Sp;!;Y]!*KpR[;dc" x="230" y="-930">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View2</field>
+    <statement name="DO">
+      <block type="controls_if" id="f@X!$ZBywv0KGizfsdo-">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="4(vPn7b9;UDT^!z6--KT">
+            <field name="OP">NEQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="tn*V79cn2|J,%=6R:672">
+                <field name="VAR">global pesanan</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="sPFw/+)-.2[zRvQ}f5;{">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreenWithStartValue" id="7s#ngMr2##AK+aB;WUu;">
+            <value name="SCREENNAME">
+              <block type="text" id="I-COqtffGQLxrckel;=S">
+                <field name="TEXT">detail</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="text_join" id="1n^TzYBtl|dzC?LTo^Ka">
+                <mutation items="5"></mutation>
+                <value name="ADD0">
+                  <block type="lexical_variable_get" id="UAK(p)`k#dEqZN1$Z~e]">
+                    <field name="VAR">global pesanan</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="w18w^M:fJGbzo0L5*Cnd">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="controls_getStartValue" id="hjaX=xEMc9[yV3`h=y(V"></block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="c`qW{eeGz3bV+f*R)-%O">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block type="lexical_variable_get" id=",D(_p:qg#16Sxc{wn=%$">
+                    <field name="VAR">global status</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="Fh6#vPT58~_x[(2f|ElC">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="$;)a(f]Ubn^NTV:I9;:V">
+                <field name="TEXT">Belum mengambil antrian!</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="a=1C()J1#B,9x.HkOo`!" x="1270" y="-930">
+    <mutation component_type="Image" is_generic="false" instance_name="drop" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">drop</field>
+    <statement name="DO">
+      <block type="controls_if" id="jxf{A.8so!P;moki|I#x">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="text_compare" id="f0HNU]4JB9z}O2YcAEwB">
+            <field name="OP">EQUAL</field>
+            <value name="TEXT1">
+              <block type="component_set_get" id="--=S5y5cypJwjB;Cs(XN">
+                <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="drop"></mutation>
+                <field name="COMPONENT_SELECTOR">drop</field>
+                <field name="PROP">Picture</field>
+              </block>
+            </value>
+            <value name="TEXT2">
+              <block type="text" id=")LJFG.~IBwFX!hhsUXlT">
+                <field name="TEXT">dropdown.png</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="?qAT5;{,^|R;cGb|sXrb">
+            <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop"></mutation>
+            <field name="COMPONENT_SELECTOR">drop</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="text" id="MHU0p#[3C`!YJ5NQXR#*">
+                <field name="TEXT">upar.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="P`L[52|^:9ueQ4-8lBiS">
+                <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="e#{[OTWh}JSD$ofklV-)">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="!##t`ZRLrbjgx232?{m_">
+                    <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1_copy"></mutation>
+                    <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="1;KJ0#5%!/E`jDLfT6ne">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="U`E.cOaO2~;?P|t%_=0d">
+                        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop2"></mutation>
+                        <field name="COMPONENT_SELECTOR">drop2</field>
+                        <field name="PROP">Picture</field>
+                        <value name="VALUE">
+                          <block type="text" id="5Y^MnAEOOnGJ!T~IB?$D">
+                            <field name="TEXT">dropdown.png</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="Kc7byytZqPEe3MYYP3xn">
+            <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop"></mutation>
+            <field name="COMPONENT_SELECTOR">drop</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="text" id="j@jK4Po{BJR]|~MgqB0;">
+                <field name="TEXT">dropdown.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="1yc4M0:bd@g8-H[?(a+%">
+                <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="GirM!sWXTR`wzA(*@=jX">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="II,:p_%mZeRpG}FY6FZM" x="-430" y="-610">
+    <mutation component_type="Form" is_generic="false" instance_name="kurir" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">kurir</field>
+    <statement name="DO">
+      <block type="component_set_get" id="J+9$exM3UE=%5rxa?l/y">
+        <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+        <field name="COMPONENT_SELECTOR">Web1</field>
+        <field name="PROP">Url</field>
+        <value name="VALUE">
+          <block type="text" id="T9m8@LHB`NlO57]c2B8.">
+            <field name="TEXT">https://laundryutm.000webhostapp.com/antrianjemput.php</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="m=!,Vk,%mib95dtG[z#r">
+            <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web4"></mutation>
+            <field name="COMPONENT_SELECTOR">Web4</field>
+            <field name="PROP">Url</field>
+            <value name="VALUE">
+              <block type="text" id="bH%XKv3eO9qXw_0e~5tC">
+                <field name="TEXT">https://laundryutm.000webhostapp.com/antriankirim.php</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="]pG*F%[i:[=uD;oX?]9F">
+                <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web3"></mutation>
+                <field name="COMPONENT_SELECTOR">Web3</field>
+                <field name="PROP">Url</field>
+                <value name="VALUE">
+                  <block type="text" id="m%w{]q96v#VvdfTW^Y[8">
+                    <field name="TEXT">https://laundryutm.000webhostapp.com/tugaskurir.php</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="},c~Ve#+r,H2u}R+:Efz">
+                    <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Web1</field>
+                    <next>
+                      <block type="component_method" id="KwR=g1^`PyL,q$XX=}Z8">
+                        <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web4"></mutation>
+                        <field name="COMPONENT_SELECTOR">Web4</field>
+                        <next>
+                          <block type="component_method" id="+Gjq?5?P^CZ{]$~(T2uH">
+                            <mutation component_type="Web" method_name="PostText" is_generic="false" instance_name="Web3"></mutation>
+                            <field name="COMPONENT_SELECTOR">Web3</field>
+                            <value name="ARG0">
+                              <block type="text_join" id=";@x$j+np4(jCO+54NDQR">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="text" id="%k`XU8]g;NHK;HJ{mph[">
+                                    <field name="TEXT">username=</field>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="controls_getStartValue" id="_JM+BL82:.dojRr2UYXa"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_method" id="d,ZFulj,Mfj=`)qD|h1:">
+                                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="JcwVU[pT7JR~i4EU0:Qk">
+                                    <field name="TEXT">Memuat data</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="text" id="gEMe1{U3gUU(]M^M?NJq">
+                                    <field name="TEXT">Loading</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="mEH`1o`:lwo3]tr8U79Z" x="570" y="-610">
+    <mutation component_type="Web" is_generic="false" instance_name="Web3" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web3</field>
+    <statement name="DO">
+      <block type="controls_if" id="9TI|^NNlr!AeuX|geWTQ">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="M38%`=n]GMr/#LAjQ7En">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id=":`+)/a]QIL_[6@.PsuAr">
+                <mutation>
+                  <eventparam name="responseCode"></eventparam>
+                </mutation>
+                <field name="VAR">responseCode</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="BfH3/;O?KRpd0-4H]d]m">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="local_declaration_statement" id="6PvoUl+6IR5Vo#XOjS9/">
+            <mutation>
+              <localname name="name"></localname>
+            </mutation>
+            <field name="VAR0">name</field>
+            <value name="DECL0">
+              <block type="text_split" id="lR@O#P*y+n~tt=|y;*?/">
+                <mutation mode="SPLIT"></mutation>
+                <field name="OP">SPLIT</field>
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="Jf[!~+WH6{E@RmQfh9UD">
+                    <mutation>
+                      <eventparam name="responseContent"></eventparam>
+                    </mutation>
+                    <field name="VAR">responseContent</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="text" id="m(BX^UxAKal)V#1mq2fU">
+                    <field name="TEXT">-</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="STACK">
+              <block type="component_set_get" id="M3@$K!`VAv8@,s^y30)L">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="labelNama"></mutation>
+                <field name="COMPONENT_SELECTOR">labelNama</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id=",TdrQ81iKR=hA-jQ/qNd">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="}so=lR~(n%l5:!2yw[cT">
+                        <field name="VAR">name</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="s#;;*~ru2_NrF=DBl{8h">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="rd;Kh1Y%e,U(T=^W%*lH">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="labelEmail"></mutation>
+                    <field name="COMPONENT_SELECTOR">labelEmail</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="lists_select_item" id="QK`?7y3s7Vp%a}-Eu^~=">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="mVZY~V@`;X2u!y(FpV/A">
+                            <field name="VAR">name</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="math_number" id="y+i)X3#Ty%a|H-Vd5~US">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="MfHHWVnH}lwUBc#zK9BQ">
+                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="labelAlamat"></mutation>
+                        <field name="COMPONENT_SELECTOR">labelAlamat</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="lists_select_item" id="HH93zbuN3}fe!1eIZ}eS">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="TBnOA(0MQ4V#*emkIsV?">
+                                <field name="VAR">name</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <block type="math_number" id="q##;hD/Ly1kbgdjta[HV">
+                                <field name="NUM">4</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="yD8;y0^AkZX9UxM*c3qA">
+                            <field name="VAR">global pesanan</field>
+                            <value name="VALUE">
+                              <block type="lists_select_item" id="M24YzTf-GClrfL#A)(=O">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="%/EEDr%~8QnVx;|lYaPZ">
+                                    <field name="VAR">name</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="?Q/tqScmb0m*Y}fE?3O#">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="lexical_variable_set" id="HTjB{O;1Ix1hiIp`F,_k">
+                                <field name="VAR">global status</field>
+                                <value name="VALUE">
+                                  <block type="lists_select_item" id="gkh1)PcA[8^EBI@NZ!9(">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="pa7~4knY]14Zg%OZu|ZE">
+                                        <field name="VAR">name</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="math_number" id="mD-]x}hhMzf)Fy}|O4ft">
+                                        <field name="NUM">5</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_if" id="D?o[f4B(6R;oUZW_?7{8">
+                                    <mutation else="1"></mutation>
+                                    <value name="IF0">
+                                      <block type="text_compare" id="Mbw[0C@DYv#l^_*,[^MU">
+                                        <field name="OP">EQUAL</field>
+                                        <value name="TEXT1">
+                                          <block type="lexical_variable_get" id="IY?SZOL4x.Bn^YD?4Ib}">
+                                            <field name="VAR">global status</field>
+                                          </block>
+                                        </value>
+                                        <value name="TEXT2">
+                                          <block type="text" id="%:%.P|Sh,Z$x%PKATZ`_">
+                                            <field name="TEXT">Kurir OTW ke alamat</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="lexical_variable_set" id="ZN**S)]7(?r5IvaBZ6J$">
+                                        <field name="VAR">global status</field>
+                                        <value name="VALUE">
+                                          <block type="text" id="llBJ^?O?K;~I@1$JZ#^.">
+                                            <field name="TEXT">jemput</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block type="lexical_variable_set" id="H6KJ42pE@a9Jq+6pAP;~">
+                                        <field name="VAR">global status</field>
+                                        <value name="VALUE">
+                                          <block type="text" id="zJdIZ8S{`hecR^m9uN%F">
+                                            <field name="TEXT">kirim</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="component_method" id=",j?e,L2%r+{F`3t[RKWA">
+                                        <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="H@5[9N)Iq~|5^o3N`AH!">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id=",X9whWMFk1-C9BL%jD+B">
+                <field name="TEXT">Silahkan cek jaringan anda!</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="57X@~fR?J^,cy;5N^jUC">
+                <field name="TEXT">Koneksi</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id="+55XsuLPdt;2}(oDd-uN">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="jVn^R0:uN%8?QgK8%SRh" x="1250" y="-630">
+    <mutation component_type="Image" is_generic="false" instance_name="drop2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">drop2</field>
+    <statement name="DO">
+      <block type="controls_if" id=",y=+(U}WC`5]Xi5SE*C_">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="text_compare" id="mZE$|Unv;Xdv552o*}W^">
+            <field name="OP">EQUAL</field>
+            <value name="TEXT1">
+              <block type="component_set_get" id="gy]$qQB+BPzvnP=pbjGd">
+                <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="drop2"></mutation>
+                <field name="COMPONENT_SELECTOR">drop2</field>
+                <field name="PROP">Picture</field>
+              </block>
+            </value>
+            <value name="TEXT2">
+              <block type="text" id="4Dit/EntwbHm(oJkjix]">
+                <field name="TEXT">dropdown.png</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="J)|U_V.O(wgYiJ|C:fEk">
+            <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop2"></mutation>
+            <field name="COMPONENT_SELECTOR">drop2</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="text" id="[raLph`uXoU:..9R?f^3">
+                <field name="TEXT">upar.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="(ZNIi(GkO?/89Ayux]T_">
+                <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="L7Q:t69b!Z!o{Ow!361h">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="NIjt:gQ%q@JC=(nhE1#7">
+                    <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1"></mutation>
+                    <field name="COMPONENT_SELECTOR">List_View1</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="=.VMEp/HHMV~M8.?;/rv">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="STfjtHdUXHt#T0c8RH0=">
+                        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop"></mutation>
+                        <field name="COMPONENT_SELECTOR">drop</field>
+                        <field name="PROP">Picture</field>
+                        <value name="VALUE">
+                          <block type="text" id="@P5~NEeH7-fPeQ4mQu:X">
+                            <field name="TEXT">dropdown.png</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="8H@d$Ono+%oxJfWY-S*o">
+            <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="drop2"></mutation>
+            <field name="COMPONENT_SELECTOR">drop2</field>
+            <field name="PROP">Picture</field>
+            <value name="VALUE">
+              <block type="text" id="dHoF])J4RfiO[hg7{G[v">
+                <field name="TEXT">dropdown.png</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="a7?1cODksr0(-@0^@-M8">
+                <mutation component_type="ListView" set_or_get="set" property_name="Visible" is_generic="false" instance_name="List_View1_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="aoFjIy}mW9HE3Eh~/A)W">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="MY?Ng5Kg`g_Nt,(jx-J0" x="-90" y="-310">
+    <field name="NAME">pesanan</field>
+    <value name="VALUE">
+      <block type="math_number" id="}!LYeye}7wkh!+]jUfDJ">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="+?vJjoan+uUPXwlWUl5h" x="-50" y="-250">
+    <field name="NAME">username</field>
+    <value name="VALUE">
+      <block type="controls_getStartValue" id="=Ldf{jqj#qKus~8[Ya-;"></block>
+    </value>
+  </block>
+  <block type="global_declaration" id="cxs|Qqn9ilw-xKPxox=?" x="-30" y="-210">
+    <field name="NAME">status</field>
+    <value name="VALUE">
+      <block type="text" id="F5`_3PlAKQH%MZ9zk0TJ">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="zdOmpF@2K3MS2AlGtFz-" x="-450" y="-90">
+    <mutation component_type="Web" is_generic="false" instance_name="Web1" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web1</field>
+    <statement name="DO">
+      <block type="controls_if" id="69W|vYng?3ld:VL5Oz|s">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="5)9Wb%])d*D]V`IB#Lx1">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="iNgb.H(~)aG.#!]ENFXY">
+                <mutation>
+                  <eventparam name="responseCode"></eventparam>
+                </mutation>
+                <field name="VAR">responseCode</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="VE7lyV,t-ovWo]R35F9_">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="local_declaration_statement" id="!0bQp).F7;,tcRPAn?_$">
+            <mutation>
+              <localname name="name"></localname>
+            </mutation>
+            <field name="VAR0">name</field>
+            <value name="DECL0">
+              <block type="text_split" id="*gedG9I|Hk4%{c9uFoTi">
+                <mutation mode="SPLIT"></mutation>
+                <field name="OP">SPLIT</field>
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="M{#{}t`N1wWJDT}MW)AG">
+                    <mutation>
+                      <eventparam name="responseContent"></eventparam>
+                    </mutation>
+                    <field name="VAR">responseContent</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="text" id="b89}Xi=u?yAk}9y5AmV[">
+                    <field name="TEXT">||</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="STACK">
+              <block type="component_set_get" id="SerH^ttXGHe!7#%Kr8w#">
+                <mutation component_type="ListView" set_or_get="set" property_name="Elements" is_generic="false" instance_name="List_View1"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1</field>
+                <field name="PROP">Elements</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="~na!uwjJ+Yj0d4!!#}n1">
+                    <field name="VAR">name</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="qGGtc+=09_)u7tY4ddWb">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="P,/c/bKqB0f.:Lhqoa$5">
+                <field name="TEXT">Silahkan cek jaringan anda!</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="_7S%SPtbS~rN9^X:R-Lr">
+                <field name="TEXT">Koneksi</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id="=/}Eh?y~44[4M06WJ!:N">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="zw7;l)K%]@u+.e|ma}9~" x="190" y="30">
+    <mutation component_type="ListView" is_generic="false" instance_name="List_View1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">List_View1</field>
+    <statement name="DO">
+      <block type="local_declaration_statement" id="ct$jvBPW9cS.AcojL[+$">
+        <mutation>
+          <localname name="name"></localname>
+        </mutation>
+        <field name="VAR0">name</field>
+        <value name="DECL0">
+          <block type="text_split" id="lDzEA=1}z/=S{v%2l0_x">
+            <mutation mode="SPLIT"></mutation>
+            <field name="OP">SPLIT</field>
+            <value name="TEXT">
+              <block type="component_set_get" id="8pgw|`xtajHQT,3ORuak">
+                <mutation component_type="ListView" set_or_get="get" property_name="Selection" is_generic="false" instance_name="List_View1"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="text" id="0UyJatoj%MJ`j;#_B!DJ">
+                <field name="TEXT">-</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="STACK">
+          <block type="controls_openAnotherScreenWithStartValue" id="}7k8y6SIBiH@s38dsC++">
+            <value name="SCREENNAME">
+              <block type="text" id="oep|];z8o_pB{Q82^$W=">
+                <field name="TEXT">detail</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="text_join" id="w0cZ!k+XC)J|E..g2WrI">
+                <mutation items="5"></mutation>
+                <value name="ADD0">
+                  <block type="lists_select_item" id="Kl`RRBJ2VA?C#+*QwCAh">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="wkLxTo065Yux(i2I$q=H">
+                        <field name="VAR">name</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="jer%,|+|9|Q{7?6nt+Qo">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="N70CdWRPxxAo~naI$T83">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="controls_getStartValue" id="/?14rrVc47UJma}Z_QB/"></block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="!LOMk7P$Mxb3G6Wzqzq}">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block type="text" id="6fWR,6M~kkfhvrM}]gk+">
+                    <field name="TEXT">jemput</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="3G]~+|k,~%hj?}dVBke|" x="-390" y="310">
+    <mutation component_type="Web" is_generic="false" instance_name="Web4" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web4</field>
+    <statement name="DO">
+      <block type="controls_if" id="{%@3RYU?q#NeA.dXwky}">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="Ox,{DC`kC=|tD62H[O8T">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="{=Z.Sj{*(cV;.=w6{n%D">
+                <mutation>
+                  <eventparam name="responseCode"></eventparam>
+                </mutation>
+                <field name="VAR">responseCode</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="^,bD_G:(,M}hF.zb,C~=">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="local_declaration_statement" id="O??/Y=8aI3PVE/PHi7P]">
+            <mutation>
+              <localname name="name"></localname>
+            </mutation>
+            <field name="VAR0">name</field>
+            <value name="DECL0">
+              <block type="text_split" id="{B5B}6Jf[q@Q8f-rH.r[">
+                <mutation mode="SPLIT"></mutation>
+                <field name="OP">SPLIT</field>
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="$GUBnaiaDuy-t?a{i=;[">
+                    <mutation>
+                      <eventparam name="responseContent"></eventparam>
+                    </mutation>
+                    <field name="VAR">responseContent</field>
+                  </block>
+                </value>
+                <value name="AT">
+                  <block type="text" id="kri%gpC/Bwb(K/i~2C^}">
+                    <field name="TEXT">||</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="STACK">
+              <block type="component_set_get" id="DsHN`1e/bqpSu)u.?VQ-">
+                <mutation component_type="ListView" set_or_get="set" property_name="Elements" is_generic="false" instance_name="List_View1_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+                <field name="PROP">Elements</field>
+                <value name="VALUE">
+                  <block type="lexical_variable_get" id="#ONBZ|R1HP0UP4J=1g:8">
+                    <field name="VAR">name</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="1O[4cVth8dV}e?}jW.k}">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="nB9b|@wBuQ}aQ=gvbA14">
+                <field name="TEXT">Silahkan cek jaringan anda!</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="Ts)Mamp3YBfmD@i`}4uu">
+                <field name="TEXT">Koneksi</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id="A)L,_-Au-]h5FF,A[#6o">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=";g~{4dv#Zs:0zX*X37W[" x="290" y="290">
+    <mutation component_type="ListView" is_generic="false" instance_name="List_View1_copy" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+    <statement name="DO">
+      <block type="local_declaration_statement" id="CVtlSTm1YZh}FUUOAzD.">
+        <mutation>
+          <localname name="name"></localname>
+        </mutation>
+        <field name="VAR0">name</field>
+        <value name="DECL0">
+          <block type="text_split" id="Y]5$_y9b9[MUUr_I:4f*">
+            <mutation mode="SPLIT"></mutation>
+            <field name="OP">SPLIT</field>
+            <value name="TEXT">
+              <block type="component_set_get" id="*/kEcl#u6mUJ?):cmY0Y">
+                <mutation component_type="ListView" set_or_get="get" property_name="Selection" is_generic="false" instance_name="List_View1_copy"></mutation>
+                <field name="COMPONENT_SELECTOR">List_View1_copy</field>
+                <field name="PROP">Selection</field>
+              </block>
+            </value>
+            <value name="AT">
+              <block type="text" id="Qgi?6WC-4M{fXcF)]=~~">
+                <field name="TEXT">-</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="STACK">
+          <block type="controls_openAnotherScreenWithStartValue" id="tYUNyDi};4(5/Rt%d@Ca">
+            <value name="SCREENNAME">
+              <block type="text" id="dLq1I^(T|T8|U1j?DSkG">
+                <field name="TEXT">detail</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="text_join" id="o#c%iQ;OMce?ha+=PIOx">
+                <mutation items="5"></mutation>
+                <value name="ADD0">
+                  <block type="lists_select_item" id="F0kM9@*[.GeX1U_K7(cG">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id=":Hhj5iEjS.mFZv1hY;J5">
+                        <field name="VAR">name</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="U)A(1jkm249O?l!0HBRJ">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id=")|Yg?kTuWH]Q}6{r,TvF">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="controls_getStartValue" id="j2wnQmW;I)7~4]1qlJ5k"></block>
+                </value>
+                <value name="ADD3">
+                  <block type="text" id="ky|OT9.JkfC^pl_M,=yD">
+                    <field name="TEXT">#</field>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block type="text" id="EDv7Xll5x/C,~/kZO#Pr">
+                    <field name="TEXT">kirim</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="230" language-version="32"></yacodeblocks>
+</xml>

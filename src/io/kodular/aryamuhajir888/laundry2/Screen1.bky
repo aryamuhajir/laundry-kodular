@@ -1,0 +1,111 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="~XsnZQ3Ez3QrRSTDHS|z" x="-750" y="-290">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="G6@%sl=.WaO;}m_)KSWB">
+        <value name="SCREENNAME">
+          <block type="text" id="iE_q}if+.i+j??=BvdJ^">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="jmSca?*Y)x7e_wV^j{^Z">
+            <field name="TEXT">admin</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="rUqmG7UBSOHMtSEM!lfx" x="-750" y="-190">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="K(GEM`bH-Z34h$.J~d`^">
+        <value name="SCREENNAME">
+          <block type="text" id=".t1/Q6Vgk+4~i`fb,Zx{">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="@E5QM`9Myu**g3y7DE,t">
+            <field name="TEXT">member</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=",UW1G=9]1g5RYySOVC-;" x="-750" y="-90">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="gidrPpzF/zziF48Vu1i!">
+        <value name="SCREENNAME">
+          <block type="text" id="8[_!~ARKAr!j$Vo[_JyW">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="aQBFIWXQ0*d6LL3h^sX6">
+            <field name="TEXT">kurir</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="lE-F-;;L{ls``J(fcHoY" x="-750" y="10">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy1_copy" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy1_copy</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="R.j80H.u06oRI.aoF*(8">
+        <value name="SCREENNAME">
+          <block type="text" id="wQ?:B=VA+no55Kbc`jGy">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="H]@q59sk~`R.o+4Wnrvz">
+            <field name="TEXT">pencuci</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="!n:RPQfk]CNC!$Lvjm`K" x="-770" y="130">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy_copy" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy_copy</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="d~eK^-x*)w7)^v;JO!3D">
+        <value name="SCREENNAME">
+          <block type="text" id="d)cSs)(rQmHlNhg%w]Lc">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="F](HWU0nAO}Vk[qx9;N0">
+            <field name="TEXT">fd</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="bW;;k.(qwC{LV86x|1ed" x="-770" y="230">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy_copy_copy" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy_copy_copy</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="lYZCp9hq6LH.aXo;{Zo2">
+        <value name="SCREENNAME">
+          <block type="text" id="(5cAWp/Ri`swG:7(F9?X">
+            <field name="TEXT">ImportD1GGG8</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="text" id="^Ye+tXi-1m$k6ALPX2UU">
+            <field name="TEXT">penyetrika</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="230" language-version="32"></yacodeblocks>
+</xml>
